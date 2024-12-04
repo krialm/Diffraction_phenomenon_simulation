@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Diffraction Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Wave Diffraction Simulation</h1>
+  <img src="img.png" alt="Laser" class="laser-image">
+  <canvas id="diffractionCanvas" width="800" height="400"></canvas>
+  <div class="controls">
+    <div class="control-group">
+      <label for="wavelength">λ (Wavelength, nm):</label>
+      <input type="range" id="wavelength" min="400" max="700" value="660" step="10">
+      <span id="wavelengthValue">660 nm</span>
+    </div>
+    <div class="control-group">
+      <label for="numSlits">N (Number of Slits):</label>
+      <input type="range" id="numSlits" min="1" max="10" value="2" step="1">
+      <span id="numSlitsValue">2</span>
+    </div>
+  </div>
+  <div class="constants">
+    <h3>Constants:</h3>
+    <p>Min Wavelength: <span id="minWavelengthValue">400 nm</span></p>
+    <p>Max Wavelength: <span id="maxWavelengthValue">700 nm</span></p>
+    <p>Slit Spacing (d): <span id="slitSpacingValue">10</span> (arbitrary units)</p>
+    <p>Laser to Slit Distance: <span id="laserSlitDistanceValue">0.5 m</span></p>
+    <p>Slit Width (a): <span id="slitWidthValue">1.5</span> (μm)</p>
+    <p>Canvas Dimensions: <span id="canvasDimensionsValue">800 x 400 px</span></p>
+  </div>
+  <button onclick="resetSimulation()">Reset</button>
+  <script src="script.js"></script>
+</body>
+</html>

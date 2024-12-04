@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  canvas {
+    border: 1px solid white;
+    margin-top: 20px;
+    background-color: black;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 20px;
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .control-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .control-group input[type="range"] {
+    width: 150px;
+  }
+  
+  .control-group span {
+    background-color: white;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-top: 3px;
+  }
+  
+  .laser-image {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    height: 100px;
+  }
+  
